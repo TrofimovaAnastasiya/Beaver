@@ -11,6 +11,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 import { TasksListComponent } from './tasks-list/tasks-list.component';
 @NgModule({
@@ -26,6 +28,8 @@ import { TasksListComponent } from './tasks-list/tasks-list.component';
     MatButtonModule,
     MatCheckboxModule,
     MatSidenavModule,
+    MatIconModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
