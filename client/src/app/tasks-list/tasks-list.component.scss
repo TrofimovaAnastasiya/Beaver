@@ -9,3 +9,18 @@
 .input-item {
   width: 500px;
 }
+.example-container {
+  position: fixed;
+  width: 300px;
+  height: 800px;
+  background-color: #fff;
+}
+
+.example-sidenav-content {
+  height: 50px;
+  justify-content: start;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
