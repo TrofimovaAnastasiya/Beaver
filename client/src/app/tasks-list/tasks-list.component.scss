@@ -1,13 +1,17 @@
-.item-listTasks {
+.listTasks {
   display: flex;
-  width: 1000px;
+  width: 900px;
+  padding-left: 200px;
   height: 70px;
   margin: auto;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .input-item {
-  width: 500px;
+  width: 700px;
+}
+p {
+  margin: 0;
 }
 .example-container {
   position: fixed;
@@ -23,4 +27,9 @@
 
 .example-sidenav {
   padding: 20px;
+}
+.button_add {
+  display: block;
+  margin-left: 50%;
+  position: center;
 }

@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TasksListComponent implements OnInit {
   showFiller = false;
   links = [
-    { url: '/tasks', name: 'List of tasks' },
+    { url: '/', name: 'List of tasks' },
     { url: '/tasks', name: 'List of tasks' },
   ];
   constructor() {}
