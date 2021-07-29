@@ -18,22 +18,28 @@
   </mat-drawer-container>
 </div>
 
-<form class="listTasks">
-  <p>Task 1</p>
+<form [formGroup]="listTasks">
+  <div
+    formArrayName="tasks"
+    *ngFor="let taskControl of listTasks.controls.tasks.value; let i = index"
+    class="item-listTasks"
+  >
+    <p>Task {{ i + 1 }}</p>
 
-  <section>
-    <mat-checkbox class="example-margin"></mat-checkbox>
-  </section>
+    <section>
+      <mat-checkbox></mat-checkbox>
+    </section>
 
-  <mat-form-field class="input-item" appearance="fill">
-    <mat-label>New task</mat-label>
-    <input matInput placeholder="Ex. Pizza" value="do homework" />
-  </mat-form-field>
+    <mat-form-field class="input-item" appearance="fill">
+      <mat-label>New task</mat-label>
+      <input matInput formControlName="{{ i }}" />
+    </mat-form-field>
 
-  <button mat-mini-fab color="warn">
-    <mat-icon>delete</mat-icon>
-  </button>
+    <button (click)="removeTask(i)" mat-mini-fab color="warn">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
 </form>
-<button class="button_add" mat-mini-fab color="primary">
+<button (click)="addTask()" class="button_add" mat-mini-fab color="primary">
   <mat-icon>add_circle</mat-icon>
 </button>
